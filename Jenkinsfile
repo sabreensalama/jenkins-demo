@@ -1,9 +1,9 @@
 #!/usr/bin/env groovy
 pipeline {
     agent any
-      triggers {
-       pullRequestMerged()
-    }
+//       triggers {
+//        pullRequestMerged()
+//     }
     stages {
         stage('Build App') {
             steps {
