@@ -1,11 +1,10 @@
 #!/usr/bin/env groovy
+
 pipeline {
     agent any
 
     triggers {
-        githubPush(
-            branches: [[name: 'main']]
-        )
+        githubPush('main')
     }
 
     
