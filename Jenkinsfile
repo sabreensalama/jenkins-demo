@@ -2,7 +2,7 @@
 pipeline {
     agent any
       triggers {
-       pullRequestMerged targetBranch: 'master'
+       pullRequestMerged targetBranch: 'main'
     }
     stages {
         stage('Build App') {
