@@ -2,8 +2,10 @@
 pipeline {
     agent any
     triggers {
-    pullRequestMerged()
-    }
+        githubPush(
+            branch: 'main'
+        )
+    
 
     stages {
         stage('Build App') {
