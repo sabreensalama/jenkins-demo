@@ -3,7 +3,7 @@ pipeline {
     agent any
     triggers {
          githubPush(
-            branch: 'main'
+            branches: [[name: 'main']]
         )
     }
 
