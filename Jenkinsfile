@@ -2,7 +2,7 @@
 pipeline {
     agent any
       triggers {
-       pullRequestMerged()
+      githubPullRequestMerged()
     }
     stages {
         stage('Build App') {
