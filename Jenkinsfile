@@ -2,8 +2,9 @@
 pipeline {
     agent any
     triggers {
-//         githubPush()
-         pullRequestMerged targetBranch: 'main'
+         githubPush(
+            branch: 'main'
+        )
     }
 
     
