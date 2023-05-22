@@ -2,9 +2,8 @@
 
 pipeline {
     agent any
-
+ if (env.BRANCH_NAME == 'main') {
     triggers {
-        if (env.BRANCH_NAME == 'main') {
         githubPush()
         }
     }
