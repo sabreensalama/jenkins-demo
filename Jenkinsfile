@@ -1,9 +1,12 @@
 #!/usr/bin/env groovy
 pipeline {
     agent any
-      triggers {
-      githubPullRequestMerged()
+    triggers {
+        githubPullRequestMerged(
+            branches: [[pattern: '*/main']],
+        )
     }
+
     stages {
         stage('Build App') {
             steps {
