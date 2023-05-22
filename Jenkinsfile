@@ -2,9 +2,7 @@
 pipeline {
     agent any
     triggers {
-        githubPullRequestMerged(
-            branches: [[pattern: '*/main']],
-        )
+    pullRequestMerged()
     }
 
     stages {
