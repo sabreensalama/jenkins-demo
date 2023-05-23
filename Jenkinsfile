@@ -3,11 +3,6 @@
 pipeline {
     agent any
 
-    triggers {
-        if (env.BRANCH_NAME == 'main') {
-            githubPush()
-        }
-    }
 
     
     stages {
