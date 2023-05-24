@@ -1,9 +1,11 @@
 #!/usr/bin/env groovy
+
 pipeline {
     agent any
-      triggers {
-       gitpush()
-    }
+
+
+
+    
     stages {
         stage('Build App') {
             steps {
