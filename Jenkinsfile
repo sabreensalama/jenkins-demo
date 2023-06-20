@@ -7,12 +7,14 @@ pipeline {
 
     
     stages {
-        stage('Build App') {
+    stages {
+        
+        stage('Test App') {
+        when {
+            branch 'feat/*'
+          }
             steps {
-                script {
-                    tags_extra = "value_1"
-                }
-               echo "Start Building the APP................................................"
+               echo "Start Testing the APP................................................"
                
             }
         }
