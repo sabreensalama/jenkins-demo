@@ -7,7 +7,6 @@ pipeline {
 
     
     stages {
-    stages {
         
         stage('Test App') {
         when {
